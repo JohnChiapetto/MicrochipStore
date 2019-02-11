@@ -2,11 +2,93 @@ body {
   color: #CCC;
   background-color: #111;
   font-family: "Segoe UI","Arial",sans-serif;
+  font-weight: lighter;
+}
+
+h1,h2,h3,h4,h5,h6,b {
+  font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #FFF;
 }
 
 p {
   font-size: 1.2em;
 }
+
+/* Nav Bars */
+nav {
+  color: #000;
+  /* font-size: 0.9em; */
+  letter-spacing: 1em 1em 0.5em;
+  margin: 1em 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+@keyframes glowy {
+  0% { text-shadow: 0px 0px 15px; }
+  25% { text-shadow: 0px 0px 20px; }
+  50% { text-shadow: 0px 0px 15px; }
+  75% { text-shadow: 0px 0px 10px; }
+  100% { text-shadow: 0px 0px 15px; }
+}
+
+nav li a {
+  text-decoration: none;
+  color: #CCC;
+  font-weight: bold;
+  padding: 0.3em 0.6em;
+}
+
+nav li a:visited {
+  color: #999;
+}
+
+nav li a:hover {
+  color: #FFF;
+  animation: glowy 1s infinite;
+}
+
+nav#utilityMenu {
+  float: right;
+  margin: -1.5em 0 0 0;
+}
+
+nav#utilityMenu li {
+  vertical-align: middle;
+  padding: 0 0.25em 0 0.2em;
+}
+
+nav#utilityMenu ul li.acctNav a {
+  color: #CCC;
+  text-decoration: none;
+  display: inline-block;
+  height: 1.3em;
+  padding: 0.5em;
+  margin: -0.4em 0 0 0;
+  font-size: 0.8em;
+}
+
+@keyframes glowyBlue {
+  
+}
+
+nav#utilityMenu ul li.acctNav a.active {
+  animation: glowyBlue 1s infinite;
+}
+
+/* Sidebar */
 
 section#sidebar {
   width: 15%;
@@ -18,6 +100,8 @@ section#sidebar {
 section#main {
   display: inline-block;
   padding: 1.5em 0 2em 1.5em;
+  margin: 0 0 2em;
+  padding: 1.5em 0 2em 1.5em;
 }
 
 section div.panel {
@@ -25,5 +109,37 @@ section div.panel {
   position: relative;
   width: 250px;
   padding: 1em;
-  /* margin: 0 0.5em 2 em 0.5em; */
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #CCC;
+}
+
+section div.panel img.chipType {
+  width: 100%;
+}
+
+footer {
+  background-color: #666666;
+  height: 25px;
+  width: 100%;
+  color: #FFF;
+
+}
+
+footer ul#menuFooter {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 0.6em;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 0.7em 0 0;
+  margin: 0;
+}
+
+footer ul li::before {
+  content: "| ";
+  padding-right: 0.7em;
 }
