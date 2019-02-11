@@ -1,0 +1,21 @@
+body {
+  color: #CCC;
+  background-color: #111;
+  font-family: "Segoe UI","Arial",sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+  
+}
+
+section#sidebar {
+  width: 15%;
+  float: right;
+  position: relative;
+  display: block;
+}
+
+section#main {
+  
+}
