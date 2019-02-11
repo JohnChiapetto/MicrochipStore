@@ -6,7 +6,6 @@ body {
 
 p {
   font-size: 1.2em;
-  
 }
 
 section#sidebar {
@@ -17,5 +16,14 @@ section#sidebar {
 }
 
 section#main {
-  
+  display: inline-block;
+  padding: 1.5em 0 2em 1.5em;
+}
+
+section div.panel {
+  float: left;
+  position: relative;
+  width: 250px;
+  padding: 1em;
+  /* margin: 0 0.5em 2 em 0.5em; */
 }
